@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MusicPlayer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="APlayer.min.css">
+</head>
+<body>
+<div id="player3" class="aplayer">
+</div>
+<script src="APlayer.min.js"></script> 
+<script>
+    var ap1 = new APlayer({
+        element: document.getElementById('player3'),
+        narrow: true,
+        autoplay: true,
+        showlrc: false,
+        music: {
+            title: 'music',
+            author: 'music',
+            url: 'music.mp3',
+            pic: 'picture.jpg'
+        }
+    });
+    ap1.init();
+</script>
